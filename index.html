@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logoCont"><img src="./assets/Library-logo-dark.png" alt="logo"></div>
+        <div class="sub-header">
+          <h1>Your Own Library</h1>
+        </div>
+        <button class="addBookButton">+ Add</button>
+      </div>
+      <dialog id="favDialog">
+        <form action="" id="form-page">
+          <div class="field-container">
+            <legend>Title*</legend>
+            <input type="text" name="title" id="title" />
+            <legend>Author*</legend>
+            <input type="text" name="author" id="author" />
+          </div>
+          <div class="option-container">
+            <select name="genre" id="genre">
+              <option value="Fiction">Fiction</option>
+              <option value="Non Fiction">Non Fiction</option>
+              <option value="Horror">Horror</option>
+              <option value="Comic">Comic</option>
+            </select>
+            <label for="isRead">Read</label>
+            <input type="checkbox" name="isRead" id="isRead" />
+          </div>
+          <div class="button-container">
+            <button id="cancelBtn" value="cancel" formmethod="dialog">
+              Cancel
+            </button>
+            <button id="submitBtn" value="default">Submit</button>
+          </div>
+        </form>
+      </dialog>
+      <div class="sidebar">
+        <div class="sidebarCard">
+          <button id="allGenres">All Genres</button>
+        </div>
+        <div class="sidebarCard">
+          <button id="fictionBtn">Fiction</button>
+        </div>
+        <div class="sidebarCard">
+          <button id="nonFictionBtn">Non-Fiction</button>
+        </div>
+        <div class="sidebarCard">
+          <button id="horrorBtn">Horror</button>
+        </div>
+        <div class="sidebarCard">
+          <button id="comicBtn">Comic</button>
+        </div>
+      </div>
+      <div class="navbar">
+        <h1>Your books</h1>
+      </div>
+      <div class="article"></div>
+      <div class="footer">Copyright @ The Odin Project 2024</div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
