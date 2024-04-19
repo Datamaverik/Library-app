@@ -169,4 +169,3 @@ article.addEventListener("change", (e) => {
     console.log(cardId);
   }
 });
-
